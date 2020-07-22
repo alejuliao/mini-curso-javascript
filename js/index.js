@@ -1,13 +1,14 @@
 const root = document.querySelector("#root")
 
-function newElement(tag, content){
-const title = `<${tag}>${content}</${tag}>`
-
-root.insertAdjacentHTML("beforeend", title)
-
-}
-
-
-
-newElement("h4", "hmm")
-newElement("h1", "ava")
+const textTitle = "ale"
+const textSmall = 'texto pequeno'
+const otherText = 'outro texto'
+//TAGGED TEMPLATE STRING
+const title = Title`
+    color: red;
+    ${textTitle}
+    font-size: 50px;
+    ${textSmall}
+    ${otherText}
+`
+root.insertAdjacentHTML('beforeend', title)
