@@ -1,14 +1,17 @@
-const root = document.querySelector("#root")
+const root = document.querySelector('#root')
+const textTitle = 'Difficulty'
 
-const textTitle = "ale"
-const textSmall = 'texto pequeno'
-const otherText = 'outro texto'
 //TAGGED TEMPLATE STRING
 const title = Title`
-    color: red;
-    ${textTitle}
-    font-size: 50px;
-    ${textSmall}
-    ${otherText}
-`
+    color: #82589f;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    margin-top: 3rem;
+    ${textTitle}`
+
+
+
+
+
 root.insertAdjacentHTML('beforeend', title)
+root.insertAdjacentHTML('beforeend', wrapperCharacters)
