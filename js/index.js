@@ -1,17 +1,14 @@
 const root = document.querySelector('#root')
-const textTitle = 'Difficulty'
+const textTitle = 'Qual a sua fome?'
 
 //TAGGED TEMPLATE STRING
 const title = Title`
     color: #82589f;
-    font-size: 2.5rem;
-    letter-spacing: 1.5px;
-    margin-top: 3rem;
-    ${textTitle}`
-
-
-
-
-
+    font-size: 6rem;
+    margin-top: 1rem;
+    ${textTitle}
+    `
 root.insertAdjacentHTML('beforeend', title)
 root.insertAdjacentHTML('beforeend', wrapperCharacters)
+root.insertAdjacentHTML('beforeend', slide)
+
